@@ -8,9 +8,9 @@ WORKDIR /app
 COPY target/file-compressor-0.0.1-SNAPSHOT.jar  /app/file-compressor-0.0.1-SNAPSHOT.jar
 
 #exposing the port
-PORT 8082
+EXPOSE 8082
 
 #running the jar file
-ENTRYPOINT["java","jar","/app/file-compressor-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java","-jar","/app/file-compressor-0.0.1-SNAPSHOT.jar"]
 
  
